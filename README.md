@@ -11,7 +11,7 @@
 # 사용기술
 
 - FrontEnd : React.js, React Router, SASS
-- BackEnd : Python, Django, AWS, MySQL
+- BackEnd : Python, Django, MySQL, AWS
 - 협업 툴 : Git, Trello, Slack
 
 # 구현기능
@@ -23,7 +23,17 @@
 - 장바구니 조회, 생성, 수정, 삭제
 - 구매목록 생성시 구매한 상품 장바구니에서 자동삭제, 조회
 - QnA 등록및 삭제, 답글 또한 등록및 삭제 구현(답글에는 등록한 사람의 이름도 나타냄)
-- uploader.py를 이용해 DB에 상품정보등을 손쉽게 
+- 검색 기능을 이용해 상품 검색 가능
+- uploader.py를 이용해 DB에 상품정보등을 손쉽게 업로드 가능
+
+# 내가 구현한 기능
+
+- products app을 통해 상품의 정보를 전달하고, 카테고리와 가격, 신상품 여부 등으로 필터링을 구현함
+- products 필터링에는 상품 분류 순서에는 query parameter, 카테고리별 필터링과 상품 상세 페이지에는 path parameter를 사용하여 Restful API를 구현
+- cart, order를 통해 장바구니와 구매목록을 구현
+- main을 통해 메인페이지에 나타내는 상품의 출력을 구현
+- uploader를 이용해 존재하는 모든 테이블에 csv의 데이터를 업로드 가능
+- AWS EC2에 django 서버를 구축하고 rds에 mysql 서버를 구축하여 로컬서버가 아닌 실제 서버에 작동하게함
 
 # Reference
 
