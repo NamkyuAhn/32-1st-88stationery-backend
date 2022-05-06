@@ -139,15 +139,15 @@ class OrderView(View):
                     Order.objects.bulk_create(order_list)
                     
             else:
-                user_id = request.user
-                product = Product.objects.get(id = data['product_id'])
-                quantity   = data['quantity']
-                user_id    = request.user.id
+                user_id  = request.user
+                product  = Product.objects.get(id = data['product_id'])
+                quantity = data['quantity']
+                user_id  = request.user.id
                 Order.objects.create(  
                     product_id = product.id,
-                    quantity = quantity,
-                    user_id = user_id,
-                    price = product.price
+                    quantity   = quantity,
+                    user_id    = user_id,
+                    price      = product.price
                 )
             return JsonResponse({'message' : 'order created'}, status = 201)
 
