@@ -31,7 +31,7 @@
 - products app을 통해 상품의 정보를 전달하고, 카테고리로 필터링 기능을, 가격 또는 신상품 여부로 정렬 기능을 구현함.
 - products 필터링에는 상품 분류 순서에는 query parameter, 카테고리별 필터링과 상품 상세 페이지에는 path parameter를 사용하여 Restful API를 구현
 - cart, order를 통해 장바구니와 구매 목록 api를 구현하고, http method 방식으로 기능을 나누어 RESTful API 구현
-- main을 통해 메인페이지에 나타내는 상품의 출력을 구현
+- main을 통해 메인 페이지에 나타내는 상품들을 신상품, 베스트 상품으로 조건을 나누어 전달
 - uploader를 이용해 존재하는 모든 테이블에 csv의 데이터를 업로드 가능
 - AWS EC2에 django 서버를 구축하고 rds에 mysql 서버를 구축하여 로컬서버가 아닌 실제 서버에 작동하게함
 
