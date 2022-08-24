@@ -26,8 +26,8 @@
 - 검색 기능을 이용해 상품 검색 가능
 - uploader.py를 이용해 DB에 상품정보등을 손쉽게 업로드 가능
 
-# 내가 구현한 기능
-
+# 본인이 구현한 기능
+- 로그인, 회원가입 제외 대부분의 기능 개발
 - products app을 통해 상품의 정보를 전달하고, 카테고리로 필터링 기능을, 가격 또는 신상품 여부로 정렬 기능을 구현함.
 - products 필터링에는 상품 분류 순서에는 query parameter, 카테고리별 필터링과 상품 상세 페이지에는 path parameter를 사용하여 Restful API를 구현
 - cart, order를 통해 장바구니와 구매 목록 api를 구현하고, http method 방식으로 기능을 나누어 RESTful API 구현
